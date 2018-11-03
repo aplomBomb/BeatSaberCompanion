@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import TwitchStreamLayout from "./TwitchStreamLayout";
 import axios from "axios";
 
-require("dotenv").config();
-
 class TwitchStreamData extends Component {
   state = {
     streamData: []
