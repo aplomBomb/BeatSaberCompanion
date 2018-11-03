@@ -1,10 +1,12 @@
 {
   "name": "beatsaberbrowserextension",
   "version": "0.1.0",
+  "homepage": "https://aplombomb.github.io/beatsabercompanion",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
     "dotenv": "^6.1.0",
+    "gh-pages": "^2.0.1",
     "react": "^16.6.0",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.6.0",
@@ -13,6 +15,8 @@
     "react-scripts": "2.0.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
