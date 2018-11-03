@@ -10,7 +10,7 @@ export default class About extends Component {
   };
   async componentDidMount() {
     const newsData = await axios.get(
-      "http://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=620980&maxlength=300&format=json"
+      "https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=620980&maxlength=300&format=json"
     );
     this.setState({
       steamData: newsData.data.appnews.newsitems
