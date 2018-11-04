@@ -14,7 +14,7 @@ class NewSongData extends React.Component {
       this.setState({
         songData: songData.data.songs
       });
-      console.log(songData);
+      // console.log(songData);
     } catch (error) {
       console.log(error);
     }

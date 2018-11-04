@@ -25,7 +25,7 @@ class TwitchStreamData extends Component {
     this.setState({
       streamData: twitchFetchData.data.data
     });
-    console.log(this.state.streamData);
+    // console.log(this.state.streamData);
   }
 
   render() {

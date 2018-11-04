@@ -4,8 +4,8 @@ class TwitchStreamLayout extends Component {
   render() {
     const { channel } = this.props;
     const twitchURL = "http://twitch.tv/";
-    console.log(channel);
-    console.log(twitchURL);
+    // console.log(channel);
+    // console.log(twitchURL);
     return (
       <a
         href={twitchURL + channel.user_name}
