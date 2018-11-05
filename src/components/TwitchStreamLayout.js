@@ -23,16 +23,13 @@ class TwitchStreamLayout extends Component {
           >
             <img
               className="card-img-top"
-              src={channel.thumbnail_url.replace(
-                /{width}x{height}/,
-                "1280x720"
-              )}
+              src={channel.thumbnail_url.replace(/{width}x{height}/, "800x600")}
               alt="Cover"
             />
           </a>
           <div className="card-body">
             <div>
-              <h4
+              <h5
                 className="card-title text-nowrap text-truncate"
                 style={{
                   margin: "0",
@@ -40,7 +37,7 @@ class TwitchStreamLayout extends Component {
                 }}
               >
                 <strong>{channel.user_name}</strong>
-              </h4>
+              </h5>
               <p
                 className="text-muted text-nowrap text-truncate"
                 style={{ marginBottom: "0" }}

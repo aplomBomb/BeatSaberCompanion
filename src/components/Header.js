@@ -21,9 +21,12 @@ export default function Header() {
             <NavLink exact to="/" className="nav-link active">
               Home
             </NavLink>
-            <NavLink exact to="/Streams" className="nav-link active">
+            <a
+              href="https://id.twitch.tv/oauth2/authorize?client_id=zvk3ma5y06cj6l7yud71ratb0olwt2&redirect_uri=http://localhost:3000/twitch-auth&response_type=token&scope=viewing_activity_read&state=analytics:read:games"
+              className="nav-link active"
+            >
               Streams
-            </NavLink>
+            </a>
             <NavLink exact to="/News" className="nav-link active">
               News
             </NavLink>
@@ -47,3 +50,4 @@ export default function Header() {
     </div>
   );
 }
+// debugger;

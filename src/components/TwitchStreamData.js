@@ -2,21 +2,26 @@ import React, { Component } from "react";
 import TwitchStreamLayout from "./TwitchStreamLayout";
 import axios from "axios";
 
+const queryString = require("query-string");
+
 class TwitchStreamData extends Component {
   state = {
     streamData: []
   };
 
   async componentDidMount() {
+    const twitchQueryParsed = queryString.parse(this.props.location.hash);
+    const token = twitchQueryParsed.access_token;
+    console.log(token);
     // const accessToken = await axios.get(
     //   "https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=zvk3ma5y06cj6l7yud71ratb0olwt2&redirect_uri=https://localhost/"
     // );
 
-    const twitchAuthData = await axios.post(process.env.REACT_APP_TWITCH_POST);
-    const twitchToken = twitchAuthData.data.access_token;
-    // console.log(twitchToken);
+    // const twitchAuthData = await axios.post(process.env.REACT_APP_TWITCH_POST);
+    // const twitchToken = twitchAuthData.data.access_token;
+    // // console.log(twitchToken);
     const twitchVerification = {
-      headers: { Authorization: `Bearer ${twitchToken}` }
+      headers: { Authorization: `Bearer ${token}` }
     };
     const twitchFetchData = await axios.get(
       "https://api.twitch.tv/helix/streams?game_id=503116",
@@ -25,7 +30,7 @@ class TwitchStreamData extends Component {
     this.setState({
       streamData: twitchFetchData.data.data
     });
-    // console.log(this.state.streamData);
+    console.log(this.state.streamData);
   }
 
   render() {

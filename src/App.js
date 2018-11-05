@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Landing from "./scenes/Landing";
 import NotFound from "./scenes/NotFound";
 import TwitchStreamData from "./components/TwitchStreamData";
+// import BackToTop from "./components/BackToTop";
 import { Provider } from "./context";
 
 class App extends Component {
@@ -20,10 +21,16 @@ class App extends Component {
               }}
             >
               <Header />
+              {/* <BackToTop /> */}
               <Switch>
                 <Route exact path="/" component={Landing} />
                 <Route path="/News" component={NewsData} />
                 <Route path="/Streams" component={TwitchStreamData} />
+                <Route path="/twitch-auth/" component={TwitchStreamData} />
+                <Route
+                  path="localhost:3000/twitch-auth/"
+                  component={TwitchStreamData}
+                />
                 <Route component={NotFound} />
               </Switch>
             </div>
