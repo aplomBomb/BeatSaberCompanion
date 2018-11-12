@@ -4,15 +4,19 @@ A companion app for the VR rhythym game Beat Saber
 
 ## Getting Started
 
-You can clone this repository if you'd like to run it on your local machine
-Target the clone via you preferred terminal and run this command:
+You can clone this repository if you'd like to run it on your local machine.
+Target the clone via your preferred terminal and run this command:
+
 ```
 npm install
 ```
+
 Once dependencies have successfully installed, run the command:
+
 ```
 npm start
 ```
+
 - Note that due to the Oauth2 handshake process, only the local machine hosting the development
   server can access the Twitch Streams page due to redirect URL issues. You must also have a Twitch
   account that you can use to login to view the Twitch Stream page successfully.
@@ -21,7 +25,6 @@ npm start
 
 You can view a working demonstration of the Beat Saber Companion online at:
 https://beatsabercompanion.herokuapp.com/
-
 
 ## Built With
 
