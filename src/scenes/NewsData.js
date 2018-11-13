@@ -29,7 +29,9 @@ export default class About extends Component {
                   paddingTop: "20%"
                 }}
               >
-                {this.state.steamData.map(article => (
+                {this.state.steamData.map((
+                  article //data retrieved from steam api mapped into NewsLayout component//
+                ) => (
                   <NewsLayout key={article.gid} article={article} />
                 ))}
               </div>

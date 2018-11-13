@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 class NewsLayout extends Component {
   render() {
-    const { article } = this.props;
+    const { article } = this.props; //prop passed from NewsData//
     // console.log(article);
     return (
       <div

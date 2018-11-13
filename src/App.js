@@ -14,6 +14,7 @@ class App extends Component {
       <Provider>
         <Router>
           <React.Fragment>
+            {/* default app background color */}
             <div
               className="App"
               style={{

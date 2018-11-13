@@ -21,7 +21,7 @@ export default function Header() {
             <NavLink exact to="/" className="nav-link active">
               Home
             </NavLink>
-            <a
+            <a //returned data from this api call will be returned as props in the TwitchStreamData component//
               href="https://id.twitch.tv/oauth2/authorize?client_id=zvk3ma5y06cj6l7yud71ratb0olwt2&redirect_uri=http://localhost:3000/twitch-auth&response_type=token&scope=viewing_activity_read&state=analytics:read:games"
               className="nav-link active"
             >
