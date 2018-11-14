@@ -3,7 +3,7 @@
 A companion app for the VR rhythym game Beat Saber.
 Allows users to browse the Beat Saver database for custom beatmaps made by the community.
 Provides easy access to the latest news for Beat Saber straight from the developers.
-Shows all Twitch channels that are currently live-streaming Beat Saber in descending or of viewership.
+Shows all Twitch channels that are currently live-streaming Beat Saber in descending order of viewership.
 
 ## Getting Started
 
