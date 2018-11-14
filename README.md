@@ -8,7 +8,9 @@ Shows all Twitch channels that are currently live-streaming Beat Saber in descen
 ## Getting Started
 
 You can clone this repository if you'd like to run it on your local machine.
-Target the clone via your preferred terminal and run this command:
+
+- You must ensure that you have Node installed, for installing Node, follow [these](https://nodejs.org/en/download/) instructions.
+  Target the clone via your preferred terminal and run this command:
 
 ```
 npm install
