@@ -3,6 +3,9 @@ import { Consumer } from "../context";
 import PropTypes from "prop-types";
 
 class SearchSongLayout extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     const { song } = this.props;
 
