@@ -9,8 +9,8 @@ class NewSongData extends React.Component {
   async componentWillMount() {
     try {
       const songData = await axios.get(
-        "https://beatsaver.com/api/songs/new/{start?"
-      );
+        "https://beatsaver.com/api/maps/hot"
+      ).then(() => console.log('songData: ', songData) );
       this.setState({
         songData: songData.data.songs
       });
